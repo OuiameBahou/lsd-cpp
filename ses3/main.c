@@ -103,7 +103,7 @@ char* get_next_line(int fd)
 		n++;
 	}
     
-    memset(fixed,0,strlen(fixed));
+    memset(fixed,0,strlen(fixed)); //we added this function so we can fill the lines read with zeros so the read_lines won't read the same lines again
    
 	 int m=0;
 	while( k [m]!= '\0')
