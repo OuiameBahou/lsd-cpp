@@ -1,4 +1,4 @@
-#include "get_next_line.h"
+#include "read_lines.h"
 
 
 void strconcatenate (char* s1, char* s2)
@@ -84,7 +84,7 @@ char* keep()
 }
 
 
-char* get_next_line(int fd)
+char* read_lines(int fd)
 {
 	
 	
@@ -118,9 +118,9 @@ char* get_next_line(int fd)
 int main()
 { 
   int fd = open("text.txt",O_RDONLY );
-  while(fd)                                       //the function get_next_line returns only lines that are not null that's why the while works just fine
+  while(fd)                                       //the function read_lines returns only lines that are not null that's why the while works just fine
    {
-    char * s2=get_next_line(fd);
+    char * s2=read_lines(fd);
     
    }
    return 0;
