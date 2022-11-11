@@ -118,7 +118,7 @@ char* get_next_line(int fd)
 int main()
 { 
   int fd = open("text.txt",O_RDONLY );
-  while(fd)                                       //the function get_next_line returns only lines that are not null that's why the while it works just fine
+  while(fd)                                       //the function get_next_line returns only lines that are not null that's why the while works just fine
    {
     char * s2=get_next_line(fd);
     
