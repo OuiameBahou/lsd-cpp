@@ -89,7 +89,7 @@ char* get_next_line(int fd)
 	
 	
 	read_file (fd);
-	if (fixed == NULL){
+	if (fixed == NULL){              //if the line that we are currently reading is NULL it exits
 		exit(EXIT_FAILURE);
 	    
 	}
@@ -118,7 +118,7 @@ char* get_next_line(int fd)
 int main()
 { 
   int fd = open("text.txt",O_RDONLY );
-  while(fd)
+  while(fd)                                       //the function get_next_line returns only lines that are not null that's why the while it works just fine
    {
     char * s2=get_next_line(fd);
     
