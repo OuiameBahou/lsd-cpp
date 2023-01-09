@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-string makeTen(string a);
+string Ten(string s);
 class Contact
 {
 public :
@@ -9,8 +9,8 @@ public :
   string last_name;
   string nickname;
   int phonenumber;
-  void getdata();
-  void showdata();
+  void getinput();
+  void showinput();
   void contact(){
     first_name="";
     last_name="";
@@ -27,5 +27,5 @@ class PhoneBook : public Contact
     void SEARCH();
     void EXIT();
     ~PhoneBook(){
-        cout<<"phonebook is deconstructed !";}
+        cout<<"all contacts are lost  forever !";}
 };
